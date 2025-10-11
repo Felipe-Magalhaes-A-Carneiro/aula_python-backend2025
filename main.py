@@ -1,4 +1,9 @@
-import calculo
+# importando - modo 1
+# import calculo
+
+# importando - modo 2
+#from calculo import * # ' * ' quer dizer que você quer TODAS as funcoes
+from calculo import dobro, triplo # ' * ' quer dizer que você quer APENAS as funcoes dobro e triplo
 
 print("Olá, Mundo! Agora no VScode!")
 
@@ -7,7 +12,7 @@ print("-" * 50)
 
 x = input("Digite o numero e direi o dobro:")
 
-dobro = calculo.dobro(x)
+dobro = dobro(x)
 
 print(f"O dobro de '{x}' é: {dobro}")
 
@@ -15,6 +20,6 @@ print(f"O dobro de '{x}' é: {dobro}")
 
 y = input("Digite outro número e agora direi o seu triplo: ")
 
-triplo = calculo.triplo(y)
+triplo = triplo(y)
 
 print(f"O triplo de '{y}' é: {triplo}")
