@@ -6,5 +6,6 @@ def mostra_menu():
             1- Calcular o dobro
             2- Calcular o triplo
             3- Calcular o quadrado
-            4- Finalizar
+            4- Calcular a raiz quadrada
+            5- Finalizar
             """)

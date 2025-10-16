@@ -25,7 +25,7 @@ print("""
           === PROGRAMA DE CÁLCULO ===
       """)
 
-inicializar = input("Digite 'y' para começar ou 'n' para sair.")
+inicializar = input("Digite 'y' para começar ou 'n' para sair. ")
 
 def menu():
     while True:
@@ -55,7 +55,14 @@ def menu():
             print(f"""\nO quadruplo de {numero} é: {quadrado}\n""")
 
         elif opcao == "4":
-            print("\n4- Finalizar. Finalizando... Obrigado. Volte sempre!\n")
+            print("\n4- Calcular a raiz quadrada\n")
+            numero = int(input("Digite o número que deseja ter a sua raiz quadrada: "))
+
+            raiz_quadrada = calculo.raiz_sqrt(numero)
+            print(f"""\nO quadruplo de {numero} é: {raiz_quadrada}\n""")
+
+        elif opcao not in [1, 2, 3]:
+            print("\n5- Finalizar. Finalizando... Obrigado. Volte sempre!\n")
             break
 
         else:

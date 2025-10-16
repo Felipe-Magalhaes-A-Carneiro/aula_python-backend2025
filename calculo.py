@@ -1,3 +1,5 @@
+import math # biblioteca "externa" do Python
+
 def dobro(num):
     return int(num) * 2
 
@@ -6,3 +8,6 @@ def triplo(num):
 
 def quadrado(num):
     return int(num) ** 2
+
+def raiz_sqrt(num):
+    return math.sqrt(int(num))
