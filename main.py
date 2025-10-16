@@ -59,7 +59,7 @@ def menu():
             numero = int(input("Digite o número que deseja ter a sua raiz quadrada: "))
 
             raiz_quadrada = calculo.raiz_sqrt(numero)
-            print(f"""\nO quadruplo de {numero} é: {raiz_quadrada}\n""")
+            print(f"""\nA raiz quadrada de {numero} é: {raiz_quadrada}\n""")
 
         elif opcao not in [1, 2, 3]:
             print("\n5- Finalizar. Finalizando... Obrigado. Volte sempre!\n")
