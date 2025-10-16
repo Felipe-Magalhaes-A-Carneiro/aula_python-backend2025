@@ -11,54 +11,56 @@
 # função escolhida pelo usuario até que ele escolha 4 e finalize o programa
 
 # importando - modo 1
+
 import calculo
+import interface
 
 # importando - modo 2
 #from calculo import * # ' * ' quer dizer que você quer TODAS as funcoes
-#from calculo import dobro, triplo, quadruplo# ' * ' quer dizer que você quer APENAS as funcoes dobro e triplo
+#from calculo import dobro, triplo, quadrado # ' * ' quer dizer que você quer APENAS as funcoes dobro e triplo
+#from interface import mostra_menu
 
-print("""\n === PROGRAMA DE CALCULO ===\n""")
+print("""
+      >>> BEM-VINDO À CALCULADORA SENAI <<<
+          === PROGRAMA DE CÁLCULO ===
+      """)
 
 inicializar = input("Digite 'y' para começar ou 'n' para sair.")
 
 def menu():
     while True:
-        print("""Escolha uma das opções abaixo:
-                1- Calcular o dobro
-                2- Calcular o triplo
-                3- Calcular o quadrado
-                4- Finalizar
-            """)
+        interface.mostra_menu()
         
-        opcao = input("Digite a opção desejada: ")
+        opcao = input("\nDigite a opção desejada: ")
 
         if opcao == "1":
-            print("1- Calcular o dobro\n")
+            print("\n1- Calcular o dobro\n")
             numero = int(input("Digite o número que deseja ser dobrado: "))
 
             dobro = calculo.dobro(numero)
-            print(f"""O dobro de {numero} é: {dobro}\n""")
+            print(f"""\nO dobro de {numero} é: {dobro}\n""")
         
         elif opcao == "2":
-            print("2- Calcular o triplo\n")
+            print("\n2- Calcular o triplo\n")
             numero = int(input("Digite o número que deseja ter o seu triplo: "))
             
             triplo = calculo.triplo(numero)
-            print(f"""O triplo de {numero} é: {triplo}\n""")
+            print(f"""\nO triplo de {numero} é: {triplo}\n""")
         
         elif opcao == "3":
-            print("3- Calcular o quadrado\n")
-            numero = int(input("Digite o número que deseja ter o seu quadruplo "))
+            print("\n3- Calcular o quadrado\n")
+            numero = int(input("Digite o número que deseja ter o seu quadrado: "))
 
-            quadruplo = calculo.quadruplo(numero)
-            print(f"""O quadruplo de {numero} é: {quadruplo}\n""")
+            quadrado = calculo.quadrado(numero)
+            print(f"""\nO quadruplo de {numero} é: {quadrado}\n""")
 
         elif opcao == "4":
-            print("\n4- Finalizar. Finalizando... Obrigado. Volte sempre!")
+            print("\n4- Finalizar. Finalizando... Obrigado. Volte sempre!\n")
             break
 
         else:
-            print("\nDigite um dos comandos disponíveis")
+            print("\nDigite um dos comandos disponíveis\n")
+            continue # pula para o proximo loop do while
 
 if inicializar == "y":
     menu()

@@ -4,5 +4,5 @@ def dobro(num):
 def triplo(num):
     return int(num) * 3
 
-def quadruplo(num):
-    return int(num) * 4
+def quadrado(num):
+    return int(num) ** 2
