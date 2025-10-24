@@ -5,9 +5,9 @@
 
 
 # Armazenar dados
-nome = input("Digite o seu nome: ")
-sobrenome = input("Digite o seu sobrenome: ")
-email = input("Escreva o seu e-mail: ")
+nome = input("Digite o seu nome: ").title()
+sobrenome = input("Digite o seu sobrenome: ").title()
+email = input("Escreva o seu e-mail: ").lower()
 cpf = input("Digite o seu CPF: ")
 
 # Trata os dados em uma linha
