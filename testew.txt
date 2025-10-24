@@ -1,0 +1,4 @@
+Olá 
+ sou um texto
+ com 3 linhas.Olá, sou um novo texto
+ utilizando append
